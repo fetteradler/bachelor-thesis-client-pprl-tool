@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pplr.gui.application.view.IntegerRestrictionDialogController">
+   <children>
+      <Pane prefHeight="300.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="64.0" layoutY="43.0" text="Integer restriction">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="negativInteger" layoutX="64.0" layoutY="143.0" mnemonicParsing="false" text="Allow negative integer" />
+            <Button fx:id="confirmButton" layoutX="578.0" layoutY="244.0" mnemonicParsing="false" text="Confirm" />
+            <Button fx:id="cancelButton" layoutX="469.0" layoutY="244.0" mnemonicParsing="false" text="Cancel" />
+            <Label layoutX="64.0" layoutY="93.0" text="Minimum" />
+            <Label layoutX="451.0" layoutY="93.0" text="Maximum" />
+            <TextField fx:id="minimum" layoutX="135.0" layoutY="88.0" prefHeight="25.0" prefWidth="143.0" />
+            <TextField fx:id="maximum" layoutX="525.0" layoutY="88.0" prefHeight="25.0" prefWidth="143.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>

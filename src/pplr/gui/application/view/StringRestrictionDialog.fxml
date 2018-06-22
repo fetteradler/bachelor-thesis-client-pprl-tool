@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pplr.gui.application.view.StringRestrictionDialogController">
+	<children>
+		<Pane prefHeight="600.0" prefWidth="800.0">
+			<children>
+				<Label layoutX="50.0" layoutY="93.0" text="Maximum length" />
+				<Label layoutX="361.0" layoutY="93.0" text="Minimum length" />
+				<TextField fx:id="maxLength" layoutX="170.0" layoutY="88.0" prefHeight="25.0" prefWidth="107.0" />
+				<TextField fx:id="minLength" layoutX="486.0" layoutY="88.0" prefHeight="25.0" prefWidth="107.0" />
+				<Separator layoutY="150.0" prefWidth="800.0" />
+				<Separator layoutY="300.0" prefWidth="800.0" />
+				<Button fx:id="confirmButton" layoutX="578.0" layoutY="542.0" mnemonicParsing="false" text="Confirm" />
+				<Button fx:id="cancelButton" layoutX="449.0" layoutY="542.0" mnemonicParsing="false" text="Cancel" />
+				<Label layoutX="50.0" layoutY="343.0" text="Additional character">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Label>
+				<Label layoutX="50.0" layoutY="43.0" text="String restriction">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Label>
+				<Label layoutX="50.0" layoutY="193.0" text="Whitespace">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Label>
+            <ScrollPane layoutY="370.0" prefHeight="166.0" prefWidth="800.0">
+              <content>
+                <AnchorPane fx:id="charPane" minHeight="0.0" minWidth="0.0" prefHeight="148.0" prefWidth="787.0">
+                     <children>
+            				<Label layoutX="50.0" layoutY="10.0" text="Allowed strings" />
+                  				<TextField fx:id="allowedChar" layoutX="166.0" layoutY="6.0" prefHeight="25.0" prefWidth="84.0" />
+            				<Button fx:id="addAllowedChar" layoutX="261.0" layoutY="6.0" mnemonicParsing="false" prefWidth="25.0" text="+" />
+                  				<Label layoutX="350.0" layoutY="5.0" text="Illegal &#10;character" textAlignment="CENTER" />
+                  				<TextField fx:id="illegalChar" layoutX="455.0" layoutY="6.0" prefHeight="25.0" prefWidth="56.0" />
+            				<Button fx:id="addIllegalChar" layoutX="715.0" layoutY="6.0" mnemonicParsing="false" prefWidth="28.0" text="+" />
+                        <Button fx:id="removeAllowedChar" layoutX="296.0" layoutY="6.0" mnemonicParsing="false" prefWidth="28.0" text="-" />
+                        <Button fx:id="removeIllegalChar" layoutX="750.0" layoutY="6.0" mnemonicParsing="false" prefWidth="28.0" text="-" />
+                        <TextField fx:id="alternativChar" layoutX="632.0" layoutY="6.0" prefHeight="25.0" prefWidth="56.0" />
+                        <Label layoutX="530.0" layoutY="5.0" text="Alternative&#10;character" textAlignment="CENTER" />
+                        <Separator layoutX="332.0" orientation="VERTICAL" prefHeight="170.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <CheckBox fx:id="removeSpaces" layoutX="50.0" layoutY="243.0" mnemonicParsing="false" text="Remove spaces" />
+			</children>
+		</Pane>
+      <CheckBox fx:id="removeWhitespaces" layoutX="300.0" layoutY="243.0" mnemonicParsing="false" text="Remove whitespaces" />
+	</children>
+</AnchorPane>

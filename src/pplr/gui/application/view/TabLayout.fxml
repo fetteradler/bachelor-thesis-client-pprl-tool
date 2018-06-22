@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="782.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pplr.gui.application.view.TabLayoutController">
+	<children>
+		<TabPane fx:id="tabPane" prefHeight="782.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab text="Select data">
+					<content>
+						<fx:include fx:id="selectTab" source="SelectDataTab2.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Data cleaning">
+					<content>
+						<fx:include fx:id="dataCleaningTab" source="DataCleaningTab.fxml" />
+					</content>
+				</Tab>
+			<Tab text="Standardization">
+					<content>
+						<fx:include fx:id="standardizationTab" source="StandardizationTab.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Encoding">
+					<content>
+						<fx:include fx:id="codierungTab" source="CodierungTab.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Finish">
+					<content>
+						<fx:include fx:id="finishTab" source="FinishTab.fxml" />
+					</content>
+				</Tab>
+		<!-- <>			<Tab fx:id="selectDataTab" text="Auswahl Daten" />
+				<fx:include fx:id="selectTab" source="SelectDataTab.fxml"
+					text="Auswahl Daten" />
+				<fx:include fx:id="dataCleaningTab" source="DataCleaningTab.fxml"
+					text="Data Cleaning" />
+				<fx:include fx:id="standartisierungTab" source="StandartisierungTab.fxml"
+					text="Standartisierung" />
+				<fx:include fx:id="codierungTab" source="CodierungTab.fxml"
+					text="Codierung" />
+				<fx:include fx:id="finshTab" source="FinishTab.fxml"
+					text="Fertigstellung" />
+				<Tab fx:id="dataCleaningPane" text="Data Cleaning" />
+				<Tab fx:id="standartisierungPane" text="Standartisierung" />
+				<Tab fx:id="codierungPane" text="Codierung" />
+				<Tab fx:id="finishPane" text="Fertigstellung" />
+				</> -->
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>

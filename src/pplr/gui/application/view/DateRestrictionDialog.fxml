@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pplr.gui.application.view.DateRestrictionDialogController">
+   <children>
+      <Pane prefHeight="300.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="64.0" layoutY="43.0" text="Date restriction">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="dateInFuture" layoutX="64.0" layoutY="143.0" mnemonicParsing="false" text="Allow date in future" />
+            <Label layoutX="64.0" layoutY="93.0" text="Earliest date" />
+            <Label layoutX="420.0" layoutY="93.0" text="Latest date" />
+            <Button fx:id="confirmButton" layoutX="578.0" layoutY="244.0" mnemonicParsing="false" text="Confirm" />
+            <Button fx:id="cancelButton" layoutX="469.0" layoutY="244.0" mnemonicParsing="false" text="Cancel" />
+            <DatePicker fx:id="earliestDate" layoutX="178.0" layoutY="88.0" />
+            <DatePicker fx:id="latestDate" layoutX="545.0" layoutY="88.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

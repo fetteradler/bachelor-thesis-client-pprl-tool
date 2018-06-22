@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:userSettingsWrapper xmlns:ns2="pplr.gui.application.settings">
+    <selectData load="true" path="lib/test3.csv"/>
+    <dataCleaning attributes="Nachname Geburtsdatum Nr." types="String Date Integer"/>
+    <standardization>
+        <format>
+            <entry>
+                <key>String</key>
+                <value>String</value>
+            </entry>
+            <entry>
+                <key>Date</key>
+                <value>dd.MM.yyyy</value>
+            </entry>
+            <entry>
+                <key>Integer</key>
+                <value>Integer</value>
+            </entry>
+        </format>
+        <stringSettings>
+            <entry>
+                <key>Nachname</key>
+                <value removeSpace="false" removeWhitespaces="false"/>
+            </entry>
+        </stringSettings>
+        <integerSettings>
+            <entry>
+                <key>Nr.</key>
+                <value negative="false"/>
+            </entry>
+        </integerSettings>
+        <dateSettings>
+            <entry>
+                <key>Geburtsdatum</key>
+                <value minimum="1965-06-11T00:00:00+01:00" future="false"/>
+            </entry>
+        </dateSettings>
+    </standardization>
+    <codierung type="false false">
+        <fillPattern/>
+    </codierung>
+</ns2:userSettingsWrapper>
